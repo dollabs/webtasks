@@ -10,14 +10,12 @@ Check out the [CHANGELOG](CHANGELOG.md)
 
 The motivation for **webtasks** is to implement a simple, asychronous
 task framework for ClojureScript *a la* [Zach Tellman's](http://ideolalia.com/) [manifold](https://github.com/ztellman/manifold) library.
-
 When the tests and API docs are ready we'll drop a link in
 issue [#2](https://github.com/ztellman/manifold/issues/2).
 
-
 ## Documentation
 
-The **webtasks** library is part of the [PAMELA](https://github.com/dollabs/pamela) suite of tools.
+The **webtasks** library was developed to support the [PAMELA](https://github.com/dollabs/pamela) suite of tools.
 
 *TBD* API docs (will be linked from [dollabs.github.io](http://dollabs.github.io/))
 
