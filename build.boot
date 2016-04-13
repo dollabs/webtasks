@@ -5,14 +5,14 @@
 ;; the file LICENSE at the root of this distribution.
 
 (def project 'dollabs/webtasks)
-(def version "0.2.0")
+(def version "0.2.1")
 (def description "Asynchronous tasks and websockets for ClojureScript")
 (def project-url "https://github.com/dollabs/webtasks")
 
 (set-env! :resource-paths #{"src"}
   :source-paths   #{"test"}
   :dependencies   '[[org.clojure/clojure "1.8.0" :scope "provided"]
-                    [org.clojure/clojurescript "1.7.228" :scope "provided"]
+                    [org.clojure/clojurescript "1.8.40" :scope "provided"]
                     [org.clojure/core.async "0.2.374"]
                     [com.cognitect/transit-cljs "0.8.237"]
                     [avenir "0.2.0"]
@@ -20,7 +20,7 @@
                     [com.cemerick/piggieback "0.2.1"     :scope "test"]
                     [weasel                 "0.7.0"      :scope "test"]
                     [org.clojure/tools.nrepl "0.2.12"    :scope "test"]
-                    [adzerk/boot-reload     "0.4.5"      :scope "test"]
+                    [adzerk/boot-reload     "0.4.7"      :scope "test"]
                     [pandeiro/boot-http "0.7.3" :scope "test"]
                     [adzerk/boot-cljs       "1.7.228-1"  :scope "test"]
                     [adzerk/boot-cljs-repl  "0.3.0"      :scope "test"]
