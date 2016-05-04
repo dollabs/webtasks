@@ -12,10 +12,10 @@
 (set-env! :resource-paths #{"src"}
   :source-paths   #{"test"}
   :dependencies   '[[org.clojure/clojure "1.8.0" :scope "provided"]
-                    [org.clojure/clojurescript "1.8.40" :scope "provided"]
+                    [org.clojure/clojurescript "1.8.51" :scope "provided"]
                     [org.clojure/core.async "0.2.374"]
                     [com.cognitect/transit-cljs "0.8.237"]
-                    [avenir "0.2.0"]
+                    [avenir "0.2.1"]
                     ;; cljs-dev
                     [com.cemerick/piggieback "0.2.1"     :scope "test"]
                     [weasel                 "0.7.0"      :scope "test"]
@@ -29,7 +29,7 @@
                     [crisptrutski/boot-cljs-test "0.2.2-SNAPSHOT" :scope "test"]
                     [adzerk/bootlaces "0.1.13" :scope "test"]
                     ;; api docs
-                    [net.info9/boot-codeina "0.2.1-SNAPSHOT" :scope "test"]
+                    [boot-codox "0.9.5" :scope "test"]
                     ])
 
 (require
@@ -40,7 +40,7 @@
   '[adzerk.boot-test :refer [test]]
   '[crisptrutski.boot-cljs-test :refer [test-cljs]]
   '[adzerk.bootlaces :refer :all]
-  '[funcool.boot-codeina :refer [apidoc]])
+  '[codox.boot :refer [codox]])
 
 (bootlaces! version)
 
@@ -54,14 +54,12 @@
   cljs {:source-map true}
   test-cljs {:js-env :phantom
              :namespaces #{"testing.webtasks.tasks" "testing.webtasks.ws"}}
-  apidoc {:title (name project)
-          :sources #{"src"}
-          :description description
-          :version version
-          :format :markdown
-          :reader :cljs
-          :src-uri (str project-url "/blob/master/")
-          :src-uri-prefix "#L"})
+  codox {:language :clojurescript
+         :source-paths ["src"]
+         :name (name project)
+         :version version
+         :output-path  "doc/api"
+         :source-uri (str project-url "/blob/master/{filepath}#L{line}")})
 
 (deftask cljs-dev
   "ClojureScript Browser REPL for CIDER"

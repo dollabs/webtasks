@@ -5,6 +5,7 @@
 ;; the file LICENSE at the root of this distribution.
 
 (ns webtasks.ws
+  "Websocket API for ClojureScript"
   (:require
    [avenir.utils :as au :refer [assoc-if]]
    [webtasks.tasks :as tasks :refer [success! error!]]
