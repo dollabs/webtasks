@@ -17,7 +17,7 @@ issue [#2](https://github.com/ztellman/manifold/issues/2).
 
 The **webtasks** library was developed to support the [PAMELA](https://github.com/dollabs/pamela) suite of tools.
 
-*TBD* API docs (will be linked from [dollabs.github.io](http://dollabs.github.io/))
+See the [API docs](http://dollabs.github.io/webtasks/doc/api/)
 
 ## Building
 
