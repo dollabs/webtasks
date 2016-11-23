@@ -61,24 +61,6 @@
          :output-path  "doc/api"
          :source-uri (str project-url "/blob/master/{filepath}#L{line}")})
 
-(deftask cljs-dev
-  "ClojureScript Browser REPL for CIDER"
-  []
-  (comp
-    (sift :add-resource #{"html"})
-    (cider)
-    (serve :dir "target")
-    (watch)
-    (reload)
-    (cljs-repl) ;; before cljs
-    (cljs)
-    (target :dir #{"target"})))
-
-(deftask cider-boot
-  "Cider boot params task"
-  []
-  (cljs-dev))
-
 (deftask testing
   "merge source paths in for testing"
   []

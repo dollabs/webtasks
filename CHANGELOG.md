@@ -5,9 +5,9 @@ All notable changes to this project will be documented in this file. This change
 ### [Unreleased]
 
 Added
-- *TBD*
 * Updated dependencies
 * Added gh-pages and API docs
+* Removed CIDER references from build.boot
 
 ### [0.2.1] - 2016-04-12
 
