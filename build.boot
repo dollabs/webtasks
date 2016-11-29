@@ -9,27 +9,28 @@
 (def description "Asynchronous tasks and websockets for ClojureScript")
 (def project-url "https://github.com/dollabs/webtasks")
 
-(set-env! :resource-paths #{"src"}
+(set-env!
+  :resource-paths #{"src"}
   :source-paths   #{"test"}
-  :dependencies   '[[org.clojure/clojure "1.8.0" :scope "provided"]
-                    [org.clojure/clojurescript "1.8.51" :scope "provided"]
-                    [org.clojure/core.async "0.2.374"]
-                    [com.cognitect/transit-cljs "0.8.237"]
+  :dependencies   '[[org.clojure/clojure        "1.8.0"         :scope "provided"]
+                    [org.clojure/clojurescript  "1.9.293"       :scope "provided"]
+                    [org.clojure/core.async     "0.2.395"]
+                    [com.cognitect/transit-cljs "0.8.239"]
                     [avenir "0.2.1"]
                     ;; cljs-dev
-                    [com.cemerick/piggieback "0.2.1"     :scope "test"]
-                    [weasel                 "0.7.0"      :scope "test"]
-                    [org.clojure/tools.nrepl "0.2.12"    :scope "test"]
-                    [adzerk/boot-reload     "0.4.8"      :scope "test"]
-                    [pandeiro/boot-http "0.7.3" :scope "test"]
-                    [adzerk/boot-cljs       "1.7.228-1"  :scope "test"]
-                    [adzerk/boot-cljs-repl  "0.3.0"      :scope "test"]
+                    [com.cemerick/piggieback    "0.2.1"           :scope "test"]
+                    [weasel                     "0.7.0"           :scope "test"]
+                    [org.clojure/tools.nrepl    "0.2.12"          :scope "test"]
+                    [adzerk/boot-reload         "0.4.13"          :scope "test"]
+                    [pandeiro/boot-http         "0.7.6"           :scope "test"]
+                    [adzerk/boot-cljs           "1.7.228-2"       :scope "test"]
+                    [adzerk/boot-cljs-repl      "0.3.3"           :scope "test"]
                     ;; testing/development
-                    [adzerk/boot-test "1.1.1" :scope "test"]
-                    [crisptrutski/boot-cljs-test "0.2.2-SNAPSHOT" :scope "test"]
-                    [adzerk/bootlaces "0.1.13" :scope "test"]
+                    [adzerk/boot-test           "1.1.2"           :scope "test"]
+                    [crisptrutski/boot-cljs-test "0.3.0-SNAPSHOT" :scope "test"]
+                    [adzerk/bootlaces            "0.1.13"         :scope "test"]
                     ;; api docs
-                    [boot-codox "0.9.5" :scope "test"]
+                    [boot-codox                  "0.10.2"         :scope "test"]
                     ])
 
 (require
