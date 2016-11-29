@@ -8,6 +8,7 @@ Added
 * Updated dependencies
 * Added gh-pages and API docs
 * Removed CIDER references from build.boot
+* Updated dependencies
 
 ### [0.2.1] - 2016-04-12
 
