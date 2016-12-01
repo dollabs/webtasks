@@ -5,7 +5,7 @@
 ;; the file LICENSE at the root of this distribution.
 
 (def project 'dollabs/webtasks)
-(def version "0.2.1")
+(def version "0.2.2")
 (def description "Asynchronous tasks and websockets for ClojureScript")
 (def project-url "https://github.com/dollabs/webtasks")
 
