@@ -5,7 +5,8 @@ All notable changes to this project will be documented in this file. This change
 ### [Unreleased]
 
 Changes
-- _TBD_
+- Updated dependencies
+- Update CLJS REPL support
 
 ### [0.2.2] - 2016-12-01
 
