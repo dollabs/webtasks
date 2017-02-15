@@ -4,8 +4,11 @@ All notable changes to this project will be documented in this file. This change
 
 ### [Unreleased]
 
+### [0.2.3] - 2017-02-15
+
 Changes
-- _TBD_
+- Updated dependencies
+- Update CLJS REPL support
 
 ### [0.2.2] - 2016-12-01
 
@@ -33,4 +36,5 @@ Added
 [0.2.0]: https://github.com/dollabs/webtasks/compare/0.1.0...0.2.0
 [0.2.1]: https://github.com/dollabs/webtasks/compare/0.2.0...0.2.1
 [0.2.2]: https://github.com/dollabs/webtasks/compare/0.2.1...0.2.2
-[Unreleased]: https://github.com/dollabs/webtasks/compare/0.2.2...HEAD
+[0.2.3]: https://github.com/dollabs/webtasks/compare/0.2.2...0.2.3
+[Unreleased]: https://github.com/dollabs/webtasks/compare/0.2.3...HEAD
